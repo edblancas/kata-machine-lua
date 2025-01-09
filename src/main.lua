@@ -13,7 +13,7 @@ M.test(2)
 M:test(3)
 
 -- just one slot between 1: and slot
-print("1: ", table.unpack({'hello', 'world', '!'}), '<lost>')
+print("1: ", table.unpack({ 'hello', 'world', '!' }), '<lost>')
 
 return M
 
