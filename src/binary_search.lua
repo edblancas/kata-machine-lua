@@ -1,8 +1,8 @@
-function binary_search(haystack, needle)
+local function binary_search(haystack, needle)
   local lo, hi = 1, #haystack
 
-  while lo < hi do
-    local m = math.ceil((lo + hi) / 2)
+  while lo <= hi do
+    local m = math.floor((lo + hi) / 2)
     local val = haystack[m]
     if val == needle then
       return true

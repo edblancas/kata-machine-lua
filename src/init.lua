@@ -5,15 +5,16 @@ function M.add(a, b)
 end
 
 function M:test(foo)
-  print('self=', self, 'foo=', foo)
+  -- print('self=', self, 'foo=', foo)
 end
 
 -- is like lua inserts the 2 arg before foo, so self is 2
 M.test(2)
+-- always call like this when defining function with :
 M:test(3)
 
 -- just one slot between 1: and slot
-print("1: ", table.unpack({ 'hello', 'world', '!' }), '<lost>')
+-- print("1: ", table.unpack({ 'hello', 'world', '!' }), '<lost>')
 
 return M
 

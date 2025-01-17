@@ -1,6 +1,6 @@
-local main = require("src.main")
+local main = require("src.init")
 
-describe("main module", function()
+describe("init module", function()
   it("should add two numbers", function()
     assert.are.equal(main.add(2, 3), 5)
   end)

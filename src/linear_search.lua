@@ -1,4 +1,4 @@
-function linear_search(array, needle)
+local function linear_search(array, needle)
   for i = 1, #array do
     if array[i] == needle then
       return true
